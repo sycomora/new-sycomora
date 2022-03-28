@@ -1,7 +1,7 @@
 <template>
   <div class="home w-screen h-full">
     <!-- First Section -->
-    <div class="h-screen grid grid-cols-5 grid-rows-2 gap-8 py-16 mx-12 px-10">
+    <div class="h-screen grid grid-cols-5 grid-rows-2 gap-8 py-16 mx-12 px-10 xxl:px-32">
       <div
         class="
           relative
@@ -87,8 +87,10 @@
           rounded-xl
           flex flex-col
           justify-center
-          gap-3
+          xl:justify-between
+          gap-2
           p-5
+          
           border-1 border-black
         "
       >
@@ -227,12 +229,12 @@
       </div>
     </div>
     <!-- Third Section -->
-    <div class="h-[32rem] w-screen my-14 px-24                 ">
+    <div class="h-full w-screen my-14 px-24 xl:px-32">
       <div class="flex justify-between items-end w-full">
         <p class="text-4xl font-bold">Artikel Terbaru: </p>
         <a href="" class="text-lg text-tersiary hover:underline ">Lihat semua ></a>
       </div>
-      <div class="grid grid-cols-2 grid-rows-2 gap-x-6 gap-y-8 w-full h-[28rem] mt-8 content-center justify-items-center">
+      <div class="grid grid-cols-2 grid-rows-2 gap-x-6 gap-y-8 w-full h-1/2 mt-8 content-center justify-items-center">
         <div v-for="x in 4" :key="x" class="w-full h-full bg-white rounded-xl text-primary grid grid-cols-3 gap-3 content-center p-5">
           <div class=" rounded-xl w-full h-full object-center">
             <img src="@/assets/Main.png" alt="" class="object-cover w-full h-full rounded-xl">
@@ -247,10 +249,10 @@
 
     </div>
     <!-- Fourth Section -->
-    <div class="h-[40rem] w-screen my-8 px-24 ">
-      <div class="grid grid-cols-2">
-        <img src="@/assets/Vitae.png" alt="Vitae by Sycomora" class="rounded-l-xl">
-        <div class="flex flex-col gap-5 items-start justify-center p-8 text-xl font-semibold text-left bg-white rounded-r-xl">
+    <div class="h-full w-screen my-16 px-24 xl:px-32">
+      <div class="grid grid-cols-2 w-full">
+        <img src="@/assets/Vitae.png" alt="Vitae by Sycomora" class="rounded-l-xl w-full">
+        <div class="w-full flex flex-col gap-5 items-start justify-center p-8 text-xl font-semibold text-left bg-white rounded-r-xl">
           <p class="text-tersiary">Vitae by Sycomora</p>
           <p class="text-5xl font-black ">Dengarkan cerita dan pengalaman langsung dari orangnya.</p>
           <p class="text-primary">Podcast Vitae menyuguhkan wawasan dari sudut pandang yang jarang atau belum pernah diungkit, bersama narasumber yang berpengalaman di bidangnya langsung.</p>
@@ -259,7 +261,7 @@
       </div>
     </div>
     <!-- Fifth Section -->
-    <div class="h-full w-screen -mt-8 px-24">
+    <div class="h-full w-screen -mt-8 px-24 xl:px-32">
       <div class="flex justify-between items-end w-full">
         <p class="text-4xl font-bold">Topik Bahasan per Penyakit: </p>
         <a href="" class="text-lg text-tersiary hover:underline ">Lihat semua ></a>
@@ -309,7 +311,7 @@
 
     </div>
     <!-- Sixth Section -->
-    <div class="h-full w-screen px-24 mt-12">
+    <div class="h-full w-screen px-24 mt-12 xl:px-32">
       <div class="flex justify-between items-end w-full">
         <p class="text-4xl font-bold">Produk Ulasan Kami: </p>
         <a href="" class="text-lg text-tersiary hover:underline ">Lihat semua ></a>
@@ -359,21 +361,21 @@
 
     </div>
     <!-- Seventh Section -->
-    <div class="h-[40rem] w-screen mt-14 px-24 ">
-      <div class="grid grid-cols-2 relative">
-        <div class="flex flex-col gap-5 items-start justify-center p-8 text-xl font-semibold text-left bg-white rounded-l-xl">
+    <div class="h-full w-screen my-16 px-24 xl:px-32">
+      <div class="grid grid-cols-2 relative w-full">
+        <div class="w-full flex flex-col gap-5 items-start justify-center p-8 text-xl font-semibold text-left bg-white rounded-l-xl">
           <p class="text-5xl font-black ">Menyajikan informasi kesehatan yang akurat dan sederhana.</p>
           <p class="text-primary">Sycomora memasang standar penyajian konten yang sangat tinggi dan menjunjung tinggi akuntabilitas, transparansi, objektivitas, serta terhindar dari conflict of interest. </p>
           <p class="text-primary">Setiap unggahan telah melalui proses review yang ketat dan selalu diperbarui setiap saat.</p>
           <p class="text-primary">Produk-produk yang Sycomora ulas selalu berdasarkan objektivitas dan atas dasar memberikan manfaat bagi masyarakat luas.</p>
         </div>
-        <img src="@/assets/Pahami.png" alt="Pahami Cara Kerja Kami" class="rounded-r-xl">
+        <img src="@/assets/Pahami.png" alt="Pahami Cara Kerja Kami" class="rounded-r-xl w-full" >
         <div class="absolute bottom-10 ">
         </div>      
       </div>
     </div>
     <!-- Last Section -->
-    <div class="h-full w-screen -mt-8 mb-14 px-24">
+    <div class="h-full w-screen -mt-8 mb-14 px-24 xl:px-32">
       <div class="flex justify-between items-end w-full">
         <p class="text-4xl font-bold">Artikel Sponsor Kami: </p>
         <a href="" class="text-lg text-tersiary hover:underline ">Lihat semua ></a>
