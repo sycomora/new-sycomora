@@ -1,5 +1,5 @@
 import axios from 'axios'
-const STRAPI_URL = "https://web-strapi.herokuapp.com/"
+const STRAPI_URL = "https://web-strapi.herokuapp.com"
 
 export default{
     async getAllBlogs() {

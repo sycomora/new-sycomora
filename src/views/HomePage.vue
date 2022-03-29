@@ -48,13 +48,22 @@
           "
         >
           <p class="text-5xl font-black text-left">
-            Putar Mozart: apa bisa bikin anak pintar?
+            {{ headline.title }}
           </p>
           <p class="text-xl text-left">
             Cerita tentang keilmiahan dan efektivitas paparan musik klasik pada
             kecerdasan anak.
           </p>
-          <p class="text-lg text-left opacity-70">5 menit baca</p>
+          <div class="flex justify-between items-end ">
+            <p class="text-lg text-left opacity-70">{{ headline.minutes }} menit baca</p>
+            <router-link :to="{ name: 'SingleBlog', params: { id: headline.id, name: headline.title } }">
+            <div class="w-10 h-10 flex items-center justify-center outline outline-2 outline-tersiary text-tersiary rounded-full duration-500 ease-in-out transform hover:scale-110 cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+            </router-link>
+          </div>
         </div>
         <img
           src="@/assets/Main.png"
@@ -190,48 +199,48 @@
           <img
             src="@\assets\Topic1.png"
             alt="Penyakit Kronis"
-            class="w-40 h-40"
+            class="w-56 h-56"
           />
           <p>Penyakit Kronis</p>
         </div>
         <div class="flex flex-col items-center justify-center">
           <img
-            src="@\assets\Topic1.png"
+            src="@\assets\Topic2.png"
             alt="Penyakit Kronis"
-            class="w-40 h-40"
+            class="w-56 h-56"
           />
-          <p>Penyakit Kronis</p>
+          <p>Nutrisi & Gizi</p>
         </div>
         <div class="flex flex-col items-center justify-center">
           <img
-            src="@\assets\Topic1.png"
+            src="@\assets\Topic3.png"
             alt="Penyakit Kronis"
-            class="w-40 h-40"
+            class="w-56 h-56"
           />
-          <p>Penyakit Kronis</p>
+          <p>Kesehatan Mental</p>
         </div>
         <div class="flex flex-col items-center justify-center">
           <img
-            src="@\assets\Topic1.png"
+            src="@\assets\Topic4.png"
             alt="Penyakit Kronis"
-            class="w-40 h-40"
+            class="w-56 h-56"
           />
-          <p>Penyakit Kronis</p>
+          <p>Kebugaran</p>
         </div>
         <div class="flex flex-col items-center justify-center">
           <img
-            src="@\assets\Topic1.png"
+            src="@\assets\Topic5.png"
             alt="Penyakit Kronis"
-            class="w-40 h-40"
+            class="w-56 h-56"
           />
-          <p>Penyakit Kronis</p>
+          <p>Kulit & Rambut </p>
         </div>
       </div>
     </div>
     <!-- Third Section -->
     <div class="h-full w-screen my-14 px-24 xl:px-32">
       <div class="flex justify-between items-end w-full">
-        <p class="text-4xl font-bold">Artikel Terbaru: </p>
+        <p class="text-4x l font-bold">Artikel Terbaru: </p>
         <a href="" class="text-lg text-tersiary hover:underline ">Lihat semua ></a>
       </div>
       <div class="grid grid-cols-2 grid-rows-2 gap-x-6 gap-y-8 w-full h-1/2 mt-8 content-center justify-items-center">
@@ -251,7 +260,7 @@
     <!-- Fourth Section -->
     <div class="h-full w-screen my-16 px-24 xl:px-32">
       <div class="grid grid-cols-2 w-full">
-        <img src="@/assets/Vitae.png" alt="Vitae by Sycomora" class="rounded-l-xl w-full">
+        <img src="@/assets/Vitae.svg" alt="Vitae by Sycomora" class="rounded-l-xl w-full">
         <div class="w-full flex flex-col gap-5 items-start justify-center p-8 text-xl font-semibold text-left bg-white rounded-r-xl">
           <p class="text-tersiary">Vitae by Sycomora</p>
           <p class="text-5xl font-black ">Dengarkan cerita dan pengalaman langsung dari orangnya.</p>
@@ -269,43 +278,43 @@
       <div class="w-full flex px-5 justify-between gap-0 text-primary font-bold text-2xl my-5">
         <div class="flex flex-col items-center justify-center">
           <img
-            src="@\assets\Penyakit1.svg"
+            src="@\assets\Penyakit1.png"
             alt="Penyakit Kronis"
-            class="w-40 h-40"
+            class="w-56 h-56"
           />
-          <p>Penyakit Kronis</p>
+          <p>Diabetes Tipe 2</p>
         </div>
         <div class="flex flex-col items-center justify-center">
           <img
-            src="@\assets\Penyakit1.svg"
+            src="@\assets\Penyakit2.png"
             alt="Penyakit Kronis"
-            class="w-40 h-40"
+            class="w-56 h-56"
           />
-          <p>Penyakit Kronis</p>
+          <p>Penyakit Autoimun</p>
         </div>
         <div class="flex flex-col items-center justify-center">
           <img
-            src="@\assets\Penyakit1.svg"
+            src="@\assets\Penyakit3.png"
             alt="Penyakit Kronis"
-            class="w-40 h-40"
+            class="w-56 h-56"
           />
-          <p>Penyakit Kronis</p>
+          <p>Kanker Payudara</p>
         </div>
         <div class="flex flex-col items-center justify-center">
           <img
-            src="@\assets\Penyakit1.svg"
+            src="@\assets\Penyakit4.png"
             alt="Penyakit Kronis"
-            class="w-40 h-40"
+            class="w-56 h-56"
           />
-          <p>Penyakit Kronis</p>
+          <p>Gangguan Kecemasan</p>
         </div>
         <div class="flex flex-col items-center justify-center">
           <img
-            src="@\assets\Penyakit1.svg"
+            src="@\assets\Penyakit5.png"
             alt="Penyakit Kronis"
-            class="w-40 h-40"
+            class="w-56 h-56"
           />
-          <p>Penyakit Kronis</p>
+          <p>Hipertensi</p>
         </div>
       </div>
 
@@ -321,7 +330,7 @@
           <img
             src="@\assets\Ulasan1.png"
             alt="Penyakit Kronis"
-            class="w-40 h-40"
+            class="w-56 h-56"
           />
           <p>Penyakit Kronis</p>
         </div>
@@ -329,7 +338,7 @@
           <img
             src="@\assets\Ulasan1.png"
             alt="Penyakit Kronis"
-            class="w-40 h-40"
+            class="w-56 h-56"
           />
           <p>Penyakit Kronis</p>
         </div>
@@ -337,7 +346,7 @@
           <img
             src="@\assets\Ulasan1.png"
             alt="Penyakit Kronis"
-            class="w-40 h-40"
+            class="w-56 h-56"
           />
           <p>Penyakit Kronis</p>
         </div>
@@ -345,7 +354,7 @@
           <img
             src="@\assets\Ulasan1.png"
             alt="Penyakit Kronis"
-            class="w-40 h-40"
+            class="w-56 h-56"
           />
           <p>Penyakit Kronis</p>
         </div>
@@ -353,7 +362,7 @@
           <img
             src="@\assets\Ulasan1.png"
             alt="Penyakit Kronis"
-            class="w-40 h-40"
+            class="w-56 h-56"
           />
           <p>Penyakit Kronis</p>
         </div>
@@ -369,7 +378,7 @@
           <p class="text-primary">Setiap unggahan telah melalui proses review yang ketat dan selalu diperbarui setiap saat.</p>
           <p class="text-primary">Produk-produk yang Sycomora ulas selalu berdasarkan objektivitas dan atas dasar memberikan manfaat bagi masyarakat luas.</p>
         </div>
-        <img src="@/assets/Pahami.png" alt="Pahami Cara Kerja Kami" class="rounded-r-xl w-full" >
+        <img src="@/assets/Pahami.svg" alt="Pahami Cara Kerja Kami" class="rounded-r-xl w-full" >
         <div class="absolute bottom-10 ">
         </div>      
       </div>
@@ -383,15 +392,15 @@
       <div class="w-full flex justify-around gap-0 text-primary font-bold text-2xl text-left my-5">
         <div class="w-2/5 flex flex-col px-4 items-center justify-center">
           <div class="w-full h-56 rounded-xl bg-primary opacity-25"></div>
-          <p class="w-45">Judul artikel ditulis di sini maksimal 3 baris seperti ini contohnya.</p>
+          <p class="w-full">Judul artikel ditulis di sini maksimal 3 baris seperti ini contohnya.</p>
         </div>
         <div class="w-2/5 flex flex-col px-4 items-center justify-center">
           <div class="w-full h-56 rounded-xl bg-primary opacity-25"></div>
-          <p class="w-45">Judul artikel ditulis di sini maksimal 3 baris seperti ini contohnya.</p>
+          <p class="w-full">Judul artikel ditulis di sini maksimal 3 baris seperti ini contohnya.</p>
         </div>
         <div class="w-2/5 flex flex-col px-4 items-center justify-center">
           <div class="w-full h-56 rounded-xl bg-primary opacity-25"></div>
-          <p class="w-45">Judul artikel ditulis di sini maksimal 3 baris seperti ini contohnya.</p>
+          <p class="w-full">Judul artikel ditulis di sini maksimal 3 baris seperti ini contohnya.</p>
         </div>
       </div>
 
@@ -400,8 +409,23 @@
 </template>
 
 <script>
+// import api from '../api/api.js'
+
 export default {
   name: "HomePage",
+  data() {
+    return {
+      headline: ''
+    }
+  },
+  methods: {
+    
+  },
+  async created() {
+    // this.headline = await api.getBlogById("623f056ce73cbd00165064d8")
+    // this.headline = this.headline.data
+    this.headline = {"_id":"623f048ce73cbd00165064d8","tulisan":"---\n__Advertisement :)__\n\n- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image\n  resize in browser.\n- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly\n  i18n with plurals support and easy syntax.\n\nYou will like those projects!\n\n---\n\n# h1 Heading 8-)\n## h2 Heading\n### h3 Heading\n#### h4 Heading\n##### h5 Heading\n###### h6 Heading\n","published_at":"2022-03-26T12:18:26.885Z","createdAt":"2022-03-26T12:18:20.342Z","updatedAt":"2022-03-29T15:11:45.029Z","__v":0,"author":"Jason","instagram":"instagram.com","minutes":5,"title":"Putar Mozart: apa bisa bikin anak pintar?","id":"623f048ce73cbd00165064d8"}
+  },
 };
 </script>
 
