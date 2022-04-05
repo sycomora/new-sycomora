@@ -133,4 +133,8 @@ export default {
 .blogs p{
   padding: 10px 0px;
 }
+
+.blogs iframe{
+  padding: 10px 0px;
+}
 </style>
