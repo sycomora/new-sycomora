@@ -1,13 +1,26 @@
 <template>
   <div class="home w-screen h-full">
     <!-- First Section -->
-    <div class="h-screen grid grid-cols-5 grid-rows-2 gap-8 py-16 mx-12 px-10 xxl:px-32">
+    <div
+      class="
+        h-full
+        lg:h-screen
+        grid grid-cols-5 grid-rows-2
+        gap-8
+        py-8
+        lg:py-16
+        mx-5
+        lg:mx-12 lg:px-10
+        xxl:px-32
+      "
+    >
       <div
         class="
           relative
           rounded-xl
           object-cover
-          col-span-3
+          col-span-5
+          lg:col-span-3
           row-span-2
           h-full
           text-primary
@@ -16,7 +29,8 @@
         <div
           class="
             absolute
-            bottom-[195px]
+            bottom-[80px]
+            lg:bottom-[195px]
             z-10
             bg-secondary
             h-min
@@ -25,7 +39,8 @@
             py-2
             m-12
             rounded-xl
-            text-white text-2xl
+            text-white text-md
+            lg:text-2xl
             flex
             items-center
             justify-center
@@ -35,33 +50,72 @@
         </div>
         <div
           class="
-            h-60
-            flex flex-col gap-1
+            h-32
+            lg:h-60
+            flex flex-col
+            lg:gap-1
             justify-center
             backdrop-opacity-20
             bg-white/100
             rounded-xl
             absolute
-            m-6
+            m-3
+            lg:m-6
             bottom-0
             p-5
           "
         >
-          <p class="text-5xl font-black text-left">
+          <p class="text-lg lg:text-5xl font-bold lg:font-black text-left">
             {{ headline.title }}
           </p>
-          <p class="text-xl text-left">
+          <p class="text-xs lg:text-xl text-left">
             Cerita tentang keilmiahan dan efektivitas paparan musik klasik pada
             kecerdasan anak.
           </p>
-          <div class="flex justify-between items-end ">
-            <p class="text-lg text-left opacity-70">{{ headline.minutes }} menit baca</p>
-            <router-link :to="{ name: 'SingleBlog', params: { id: headline.id, name: headline.title } }">
-            <div class="w-10 h-10 flex items-center justify-center outline outline-2 outline-tersiary text-tersiary rounded-full duration-500 ease-in-out transform hover:scale-110 cursor-pointer">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
+          <div class="flex justify-between items-center lg:items-end">
+            <p class="text-xs lg:text-lg text-left opacity-70">
+              {{ headline.minutes }} menit baca
+            </p>
+            <router-link
+              :to="{
+                name: 'SingleBlog',
+                params: { id: headline.id, name: headline.title },
+              }"
+            >
+              <div
+                class="
+                  w-5
+                  lg:w-10
+                  h-5
+                  lg:h-10
+                  flex
+                  items-center
+                  justify-center
+                  outline outline-2 outline-tersiary
+                  text-tersiary
+                  rounded-full
+                  duration-500
+                  ease-in-out
+                  transform
+                  hover:scale-110
+                  cursor-pointer
+                "
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </div>
             </router-link>
           </div>
         </div>
@@ -71,7 +125,16 @@
           class="object-cover w-full h-full rounded-xl"
         />
       </div>
-      <div class="w-full col-span-2 rounded-xl flex flex-col text-primary">
+      <div
+        class="
+          w-full
+          col-span-5
+          lg:col-span-2
+          rounded-xl
+          flex flex-col
+          text-primary
+        "
+      >
         <div class="w-full h-1/2 rounded-t-xl">
           <img
             src="@/assets/Main2.png"
@@ -79,19 +142,73 @@
             class="w-full h-full object-cover rounded-xl"
           />
         </div>
-        <div class="w-full h-1/2 rounded-b-xl flex flex-col p-5 bg-white justify-center">
-          <p class="text-3xl font-black text-left">
+        <div
+          class="
+            w-full
+            h-full
+            rounded-b-xl
+            flex flex-col
+            p-5
+            bg-white
+            justify-center
+          "
+        >
+          <p class="text-lg lg:text-3xl font-bold lg:font-black text-left">
             Pilihan makanan untuk kamu yang memiliki PCOS
           </p>
-          <p class="text-lg font-bold text-left">
-            Kamu masih punya banyak sekali pilihan makanan yang lezat dan
-            bergizi.
-          </p>
+          <div class="flex justify-between items-center">
+            <p class="text-xs lg:text-lg lg:font-bold text-left">
+              Kamu masih punya banyak sekali pilihan makanan yang lezat dan
+              bergizi.
+            </p>
+            <router-link
+              :to="{
+                name: 'SingleBlog',
+                params: { id: headline.id, name: headline.title },
+              }"
+            >
+              <div
+                class="
+                  w-5
+                  lg:w-10
+                  h-5
+                  lg:h-10
+                  flex
+                  items-center
+                  justify-center
+                  outline outline-2 outline-tersiary
+                  text-tersiary
+                  rounded-full
+                  duration-500
+                  ease-in-out
+                  transform
+                  hover:scale-110
+                  cursor-pointer
+                "
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </div>
+            </router-link>
+          </div>
         </div>
       </div>
       <div
         class="
-          col-span-2
+          col-span-5
+          lg:col-span-2
           bg-white
           rounded-xl
           flex flex-col
@@ -99,36 +216,47 @@
           xl:justify-between
           gap-2
           p-5
-          
           border-1 border-black
         "
       >
-        <p class="text-3xl font-black text-left">
+        <p class="text-lg lg:text-3xl font-bold lg:font-black text-left">
           Hubunganmu bermasalah? Bisa jadi akibat beda jenis attachment.
         </p>
-        <p class="text-xl font-bold text-left">
+        <p class="text-md lg:text-xl lg:font-bold text-left">
           Perbedaan ini sering kali menjadi sumber pertengkaran pasangan. Kenali
           lebih dalam apa jenis attachment-mu melalui tes ini dan pahami
           solusinya.
         </p>
-        <p class="text-xl font-bold text-left opacity-70">
+        <p class="text-md lg:text-xl font-bold text-left opacity-70">
           MomoFinder | 2 menit telusur
         </p>
       </div>
     </div>
     <!-- Second Section -->
-    <div class="h-90 w-screen bg-tersiary relative p-10">
+    <div
+      class="
+        h-full
+        lg:h-90
+        w-screen
+        bg-tersiary
+        flex flex-col
+        items-center
+        justify-between
+        lg:relative lg:p-10
+      "
+    >
       <div
         class="
           w-max
-          h-min
-          absolute
+          lg:h-min lg:absolute
           top-0
+          left-16
           rounded-b-xl
-          ml-5
+          lg:ml-5
           p-5
-          pt-10
-          text-white text-4xl
+          lg:pt-10
+          text-white text-lg
+          lg:text-4xl
           bg-primary
           font-bold
         "
@@ -142,16 +270,17 @@
           flex flex-row
           gap-8
           items-center
-          justify-end
+          justify-center
+          lg:justify-end
           text-tersiary
           px-10
         "
       >
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center pt-3 lg:pt-0">
           <div class="relative h-full flex items-center justify-center">
             <input
               type="text"
-              class="px-3 py-4 bg-white rounded-xl text-xl w-96 h-10"
+              class="px-3 py-4 bg-white rounded-xl text-xl w-80 lg:w-96 h-10"
             />
             <span
               class="
@@ -189,148 +318,342 @@
         </div>
 
         <button
-          class="bg-white h-full w-max p-2 px-4 rounded-xl font-bold text-xl"
+          class="
+            bg-white
+            hidden
+            lg:block
+            h-full
+            w-max
+            p-2
+            px-4
+            rounded-xl
+            font-bold
+            text-xl
+          "
         >
           Lihat semua topik >
         </button>
       </div>
-      <div class="grid grid-cols-5 gap-0 text-white text-2xl my-8">
+      <div
+        class="
+          w-full
+          grid grid-cols-2
+          content-center
+          lg:grid-cols-6
+          gap-2
+          lg:gap-0
+          text-white text-lg
+          lg:text-2xl
+          my-8
+        "
+      >
         <div class="flex flex-col items-center justify-center">
-          <img
-            src="@\assets\Topic1.png"
-            alt="Penyakit Kronis"
-            class="w-56 h-56"
-          />
-          <p>Penyakit Kronis</p>
+          <router-link to="/penyakitkronis">
+            <img
+              src="@\assets\Topic1.png"
+              alt="Penyakit Kronis"
+              class="w-40 lg:w-56 h-40 lg:h-56"
+            />
+            <p>Penyakit Kronis</p>
+          </router-link>
         </div>
         <div class="flex flex-col items-center justify-center">
-          <img
-            src="@\assets\Topic2.png"
-            alt="Penyakit Kronis"
-            class="w-56 h-56"
-          />
-          <p>Nutrisi & Gizi</p>
+          <router-link to="/penyakitkronis">
+            <img
+              src="@\assets\Topic2.png"
+              alt="Penyakit Kronis"
+              class="w-40 lg:w-56 h-40 lg:h-56"
+            />
+            <p>Nutrisi & Gizi</p>
+          </router-link>
         </div>
         <div class="flex flex-col items-center justify-center">
-          <img
-            src="@\assets\Topic3.png"
-            alt="Penyakit Kronis"
-            class="w-56 h-56"
-          />
-          <p>Kesehatan Mental</p>
+          <router-link to="/penyakitkronis">
+            <img
+              src="@\assets\Topic3.png"
+              alt="Penyakit Kronis"
+              class="w-40 lg:w-56 h-40 lg:h-56"
+            />
+            <p>Kesehatan Mental</p>
+          </router-link>
         </div>
         <div class="flex flex-col items-center justify-center">
-          <img
-            src="@\assets\Topic4.png"
-            alt="Penyakit Kronis"
-            class="w-56 h-56"
-          />
-          <p>Kebugaran</p>
+          <router-link to="/penyakitkronis">
+            <img
+              src="@\assets\Topic4.png"
+              alt="Penyakit Kronis"
+              class="w-40 lg:w-56 h-40 lg:h-56"
+            />
+            <p>Kebugaran</p>
+          </router-link>
         </div>
         <div class="flex flex-col items-center justify-center">
-          <img
-            src="@\assets\Topic5.png"
-            alt="Penyakit Kronis"
-            class="w-56 h-56"
-          />
-          <p>Kulit & Rambut </p>
+          <router-link to="/penyakitkronis">
+            <img
+              src="@\assets\Topic5.png"
+              alt="Penyakit Kronis"
+              class="w-40 lg:w-56 h-40 lg:h-56"
+            />
+            <p>Kulit & Rambut</p>
+          </router-link>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <router-link to="/penyakitkronis">
+            <img
+              src="@\assets\Topic5.png"
+              alt="Penyakit Kronis"
+              class="w-40 lg:w-56 h-40 lg:h-56"
+            />
+            <p>Profesi Kesehatan</p>
+          </router-link>
         </div>
       </div>
+      <button
+        class="
+          bg-white
+          block
+          lg:hidden
+          h-full
+          w-max
+          p-2
+          px-4
+          rounded-xl
+          font-bold
+          text-lg
+          lg:text-xl
+          mb-10
+        "
+      >
+        Lihat semua topik >
+      </button>
     </div>
     <!-- Third Section -->
-    <div class="h-full w-screen my-14 px-24 xl:px-32">
+    <div class="h-full w-screen my-6 lg:my-14 px-5 lg:px-24 xl:px-32">
       <div class="flex justify-between items-end w-full">
-        <p class="text-4x l font-bold">Artikel Terbaru: </p>
-        <a href="" class="text-lg text-tersiary hover:underline ">Lihat semua ></a>
+        <p class="text-2xl lg:text-4xl font-bold">Artikel Terbaru Kami:</p>
+        <a href="" class="text-lg text-tersiary hover:underline hidden lg:block"
+          >Lihat semua ></a
+        >
       </div>
-      <div class="grid grid-cols-2 grid-rows-2 gap-x-6 gap-y-8 w-full h-1/2 mt-8 content-center justify-items-center">
-        <div v-for="x in 4" :key="x" class="w-full h-full bg-white rounded-xl text-primary grid grid-cols-3 gap-3 content-center p-5">
-          <div class=" rounded-xl w-full h-full object-center">
-            <img src="@/assets/Main.png" alt="" class="object-cover w-full h-full rounded-xl">
+      <div
+        class="
+          grid grid-cols-2 grid-rows-2
+          gap-x-6 gap-y-8
+          w-full
+          h-1/2
+          mt-2
+          lg:mt-8
+          content-center
+          justify-items-center
+        "
+      >
+        <div
+          v-for="x in 4"
+          :key="x"
+          class="
+            w-full
+            h-full
+            bg-white
+            rounded-xl
+            text-primary
+            flex flex-col
+            lg:grid lg:grid-cols-3
+            gap-3
+            content-center
+            p-3
+            lg:p-5
+          "
+        >
+          <div class="rounded-xl w-full h-full object-center">
+            <img
+              src="@/assets/Main.png"
+              alt=""
+              class="object-cover w-full h-full rounded-xl"
+            />
           </div>
-          <div class="col-span-2 text-left flex flex-col justify-between">
-            <p class="text-2xl font-bold">Judul artikel ditulis di sini maksimal 3 baris seperti ini contohnya.</p>
-            <p class="text-lg">Subjudul ditulis di sini maksimal 2 baris seperti ini contohnya.</p>
-            <p class="opacity-70">X menit baca</p>
+          <div
+            class="
+              col-span-2
+              text-left
+              flex flex-col
+              justify-between
+              gap-3
+              lg:gap-0
+            "
+          >
+            <p class="text-sm lg:text-2xl font-bold">
+              Judul artikel ditulis di sini maksimal 3 baris seperti ini
+              contohnya.
+            </p>
+            <p class="text-xs lg:text-lg">
+              Subjudul ditulis di sini maksimal 2 baris seperti ini contohnya.
+            </p>
+            <p class="opacity-70 hidden lg:block">X menit baca</p>
           </div>
         </div>
       </div>
-
+      <div class="lg:hidden mt-3 h-12 w-full flex items-center justify-center">
+        <button
+          class="
+            bg-tersiary
+            block
+            lg:hidden
+            h-full
+            w-full
+            p-2
+            px-4
+            rounded-xl
+            font-bold
+            text-lg
+            text-white
+          "
+        >
+          Lihat semua topik >
+        </button>
+      </div>
     </div>
     <!-- Fourth Section -->
-    <div class="h-full w-screen my-16 px-24 xl:px-32">
-      <div class="grid grid-cols-2 w-full">
-        <img src="@/assets/Vitae.svg" alt="Vitae by Sycomora" class="rounded-l-xl w-full">
-        <div class="w-full flex flex-col gap-5 items-start justify-center p-8 text-xl font-semibold text-left bg-white rounded-r-xl">
-          <p class="text-tersiary">Vitae by Sycomora</p>
-          <p class="text-5xl font-black ">Dengarkan cerita dan pengalaman langsung dari orangnya.</p>
-          <p class="text-primary">Podcast Vitae menyuguhkan wawasan dari sudut pandang yang jarang atau belum pernah diungkit, bersama narasumber yang berpengalaman di bidangnya langsung.</p>
-          <p class="text-primary">Kamu bisa dengarkan Podcast Vitae by Sycomora hanya di Spotify. Unduh aplikasinya sekarang dan klik <a href="" class="text-tersiary hover:underline">di sini</a> untuk langsung mendengarkan.</p>
+    <div class="h-full w-screen my-6 lg:my-14 px-5 lg:px-24 xl:px-32">
+      <div class="lg:grid lg:grid-cols-2 flex flex-col">
+        <img
+          src="@/assets/Vitae.svg"
+          alt="Vitae by Sycomora"
+          class="rounded rounded-t-xl lg:rounded-l-xl w-full"
+        />
+        <div
+          class="
+            w-full
+            flex flex-col
+            gap-2
+            lg:gap-5
+            items-start
+            justify-center
+            p-4
+            lg:p-8
+            text-xl
+            font-semibold
+            text-left
+            bg-white
+            rounded-b-xl
+            lg:rounded-r-xl
+          "
+        >
+          <p class="text-tersiary text-lg lg:text-2xl">Vitae by Sycomora</p>
+          <p class="text-2xl lg:text-5xl font-bold lg:font-black">
+            Dengarkan cerita dan pengalaman langsung dari orangnya.
+          </p>
+          <p class="text-primary text-sm lg:text-xl font-normal">
+            Podcast Vitae menyuguhkan wawasan dari sudut pandang yang jarang
+            atau belum pernah diungkit, bersama narasumber yang berpengalaman di
+            bidangnya langsung.
+          </p>
+          <p class="text-primary text-sm lg:text-xl font-normal">
+            Kamu bisa dengarkan Podcast Vitae by Sycomora hanya di Spotify.
+            Unduh aplikasinya sekarang dan klik
+            <a href="" class="text-tersiary hover:underline">di sini</a> untuk
+            langsung mendengarkan.
+          </p>
         </div>
       </div>
     </div>
     <!-- Fifth Section -->
-    <div class="h-full w-screen -mt-8 px-24 xl:px-32">
+    <div class="h-full w-screen lg:-mt-8 my-6 lg:my-0 px-5 lg:px-24 xl:px-32">
       <div class="flex justify-between items-end w-full">
-        <p class="text-4xl font-bold">Topik Bahasan per Penyakit: </p>
-        <a href="" class="text-lg text-tersiary hover:underline ">Lihat semua ></a>
+        <p class="text-2xl lg:text-4xl font-bold text-left lg:text-center">Topik Bahasan per Penyakit:</p>
+        <a href="" class="hidden lg:block text-lg text-tersiary hover:underline"
+          >Lihat semua ></a
+        >
       </div>
-      <div class="w-full flex px-5 justify-between gap-0 text-primary font-bold text-2xl my-5">
-        <div class="flex flex-col items-center justify-center">
+      <div
+        class="
+          w-full
+          grid grid-cols-3
+          lg:flex
+          lg:px-5
+          justify-between
+          gap-0
+          text-primary
+          font-bold
+          text-sm
+          lg:text-2xl
+          my-5
+        "
+      >
+        <div class="flex flex-col items-center justify-start lg:justify-center">
           <img
             src="@\assets\Penyakit1.png"
             alt="Penyakit Kronis"
-            class="w-56 h-56"
+            class="w-28 lg:w-56 h-28 lg:h-56"
           />
           <p>Diabetes Tipe 2</p>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-start lg:justify-center">
           <img
             src="@\assets\Penyakit2.png"
             alt="Penyakit Kronis"
-            class="w-56 h-56"
+            class="w-28 lg:w-56 h-28 lg:h-56"
           />
           <p>Penyakit Autoimun</p>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-start lg:justify-center">
           <img
             src="@\assets\Penyakit3.png"
             alt="Penyakit Kronis"
-            class="w-56 h-56"
+            class="w-28 lg:w-56 h-28 lg:h-56"
           />
           <p>Kanker Payudara</p>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-start lg:justify-center">
           <img
             src="@\assets\Penyakit4.png"
             alt="Penyakit Kronis"
-            class="w-56 h-56"
+            class="w-28 lg:w-56 h-28 lg:h-56"
           />
           <p>Gangguan Kecemasan</p>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-start lg:justify-center">
           <img
             src="@\assets\Penyakit5.png"
             alt="Penyakit Kronis"
-            class="w-56 h-56"
+            class="w-28 lg:w-56 h-28 lg:h-56"
           />
           <p>Hipertensi</p>
         </div>
+        <div class="flex lg:hidden flex-col items-center justify-start lg:justify-center">
+          <div class="text-white font-light rounded-xl bg-tersiary w-28 lg:w-56 h-28 lg:h-56 flex items-center justify-center">
+              Lihat semua
+          </div>
+        </div>
       </div>
-
     </div>
     <!-- Sixth Section -->
-    <div class="h-full w-screen px-24 mt-12 xl:px-32">
+    <div class="h-full w-screen mt-12 my-6 lg:my-0 px-5 lg:px-24 xl:px-32">
       <div class="flex justify-between items-end w-full">
-        <p class="text-4xl font-bold">Produk Ulasan Kami: </p>
-        <a href="" class="text-lg text-tersiary hover:underline ">Lihat semua ></a>
+        <p class="text-2xl lg:text-4xl font-bold">Produk Ulasan Kami:</p>
+        <a href="" class="hidden lg:block text-lg text-tersiary hover:underline"
+          >Lihat semua ></a
+        >
       </div>
-      <div class="w-full flex justify-between px-5 gap-0 text-primary font-bold text-2xl my-5">
+      <div
+        class="
+          w-full
+          grid grid-cols-3
+          lg:flex
+          justify-between
+          lg:px-5
+          gap-0
+          text-primary
+          font-bold
+          text-sm
+          lg:text-2xl
+          my-5
+        "
+      >
         <div class="flex flex-col items-center justify-center">
           <img
             src="@\assets\Ulasan1.png"
             alt="Penyakit Kronis"
-            class="w-56 h-56"
+            class="w-28 lg:w-56 h-28 lg:h-56"
           />
           <p>Penyakit Kronis</p>
         </div>
@@ -338,7 +661,7 @@
           <img
             src="@\assets\Ulasan1.png"
             alt="Penyakit Kronis"
-            class="w-56 h-56"
+            class="w-28 lg:w-56 h-28 lg:h-56"
           />
           <p>Penyakit Kronis</p>
         </div>
@@ -346,7 +669,7 @@
           <img
             src="@\assets\Ulasan1.png"
             alt="Penyakit Kronis"
-            class="w-56 h-56"
+            class="w-28 lg:w-56 h-28 lg:h-56"
           />
           <p>Penyakit Kronis</p>
         </div>
@@ -354,7 +677,7 @@
           <img
             src="@\assets\Ulasan1.png"
             alt="Penyakit Kronis"
-            class="w-56 h-56"
+            class="w-28 lg:w-56 h-28 lg:h-56"
           />
           <p>Penyakit Kronis</p>
         </div>
@@ -362,48 +685,113 @@
           <img
             src="@\assets\Ulasan1.png"
             alt="Penyakit Kronis"
-            class="w-56 h-56"
+            class="w-28 lg:w-56 h-28 lg:h-56"
           />
           <p>Penyakit Kronis</p>
+        </div>
+        <div class="flex lg:hidden flex-col items-center justify-start lg:justify-center">
+          <div class="text-white font-light rounded-xl bg-tersiary w-28 lg:w-56 h-28 lg:h-56 flex items-center justify-center">
+              Lihat semua
+          </div>
         </div>
       </div>
-
     </div>
     <!-- Seventh Section -->
-    <div class="h-full w-screen my-16 px-24 xl:px-32">
-      <div class="grid grid-cols-2 relative w-full">
-        <div class="w-full flex flex-col gap-5 items-start justify-center p-8 text-xl font-semibold text-left bg-white rounded-l-xl">
-          <p class="text-5xl font-black ">Menyajikan informasi kesehatan yang akurat dan sederhana.</p>
-          <p class="text-primary">Sycomora memasang standar penyajian konten yang sangat tinggi dan menjunjung tinggi akuntabilitas, transparansi, objektivitas, serta terhindar dari conflict of interest. </p>
-          <p class="text-primary">Setiap unggahan telah melalui proses review yang ketat dan selalu diperbarui setiap saat.</p>
-          <p class="text-primary">Produk-produk yang Sycomora ulas selalu berdasarkan objektivitas dan atas dasar memberikan manfaat bagi masyarakat luas.</p>
+    <div class="h-full w-screen my-6 lg:my-16 px-5 lg:px-24 xl:px-32">
+      <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 relative w-full">
+        <div
+          class="
+            w-full
+            flex flex-col
+            gap-2
+            lg:gap-5
+            items-start
+            justify-center
+            p-4
+            lg:p-8
+            text-xl
+            font-semibold
+            text-left
+            bg-white
+            rounded-b-xl
+            lg:rounded-l-xl
+          "
+        >
+          <p class="text-2xl lg:text-5xl font-bold lg:font-black">
+            Menyajikan informasi kesehatan yang akurat dan sederhana.
+          </p>
+          <p class="text-primary text-sm lg:text-xl font-normal">
+            Sycomora memasang standar penyajian konten yang sangat tinggi dan
+            menjunjung tinggi akuntabilitas, transparansi, objektivitas, serta
+            terhindar dari conflict of interest.
+          </p>
+          <p class="text-primary text-sm lg:text-xl font-normal">
+            Setiap unggahan telah melalui proses review yang ketat dan selalu
+            diperbarui setiap saat.
+          </p>
+          <p class="text-primary text-sm lg:text-xl font-normal">
+            Produk-produk yang Sycomora ulas selalu berdasarkan objektivitas dan
+            atas dasar memberikan manfaat bagi masyarakat luas.
+          </p>
+          <button
+          class="
+            bg-tersiary
+            block
+            lg:hidden
+            h-full
+            w-full
+            p-2
+            px-4
+            rounded-xl
+            font-bold
+            text-lg
+            text-white
+          "
+        >
+          Lihat semua
+        </button>
         </div>
-        <img src="@/assets/Pahami.svg" alt="Pahami Cara Kerja Kami" class="rounded-r-xl w-full" >
-        <div class="absolute bottom-10 ">
-        </div>      
+        <img
+          src="@/assets/Pahami.svg"
+          alt="Pahami Cara Kerja Kami"
+          class="rounded rounded-t-xl lg:rounded-r-xl w-full"
+        />
+        
+        <div class="absolute bottom-10"></div>
       </div>
     </div>
     <!-- Last Section -->
-    <div class="h-full w-screen -mt-8 mb-14 px-24 xl:px-32">
+    <div class="h-full w-screen lg:-mt-8 mb-14 px-5 lg:px-24 xl:px-32">
       <div class="flex justify-between items-end w-full">
-        <p class="text-4xl font-bold">Artikel Sponsor Kami: </p>
-        <a href="" class="text-lg text-tersiary hover:underline ">Lihat semua ></a>
+        <p class="text-2xl lg:text-4xl font-bold">Artikel Sponsor Kami:</p>
+        <a href="" class="hidden lg:block text-lg text-tersiary hover:underline"
+          >Lihat semua ></a
+        >
       </div>
-      <div class="w-full flex justify-around gap-0 text-primary font-bold text-2xl text-left my-5">
-        <div class="w-2/5 flex flex-col px-4 items-center justify-center">
-          <div class="w-full h-56 rounded-xl bg-primary opacity-25"></div>
-          <p class="w-full">Judul artikel ditulis di sini maksimal 3 baris seperti ini contohnya.</p>
-        </div>
-        <div class="w-2/5 flex flex-col px-4 items-center justify-center">
-          <div class="w-full h-56 rounded-xl bg-primary opacity-25"></div>
-          <p class="w-full">Judul artikel ditulis di sini maksimal 3 baris seperti ini contohnya.</p>
-        </div>
-        <div class="w-2/5 flex flex-col px-4 items-center justify-center">
-          <div class="w-full h-56 rounded-xl bg-primary opacity-25"></div>
-          <p class="w-full">Judul artikel ditulis di sini maksimal 3 baris seperti ini contohnya.</p>
+      <div
+        class="
+          w-full
+          flex
+          flex-col
+          lg:flex-row
+          justify-around
+          gap-4
+          lg:gap-2
+          text-primary
+          font-bold
+          text-2xl text-left
+          my-5
+        "
+      >
+        <div
+          v-for="(blog, index) in testAllBlogs.slice(0, 3)"
+          :key="index"
+          class="bg-white lg:bg-transparent rounded-xl  w-full h-40 lg:h-full lg:w-2/5 flex lg:flex-col gap-2 lg:gap-0 lg:px-4 items-center justify-center p-3 lg:p-0 lg:py-0"
+        >
+          <div class="h-full w-40 lg:w-full lg:h-56 rounded-xl bg-primary opacity-25"></div>
+          <p class="w-full text-xl lg:text-4xl text-left lg:text-center">{{ blog.title }}</p>
         </div>
       </div>
-
     </div>
   </div>
 </template>
@@ -415,16 +803,56 @@ export default {
   name: "HomePage",
   data() {
     return {
-      headline: ''
-    }
+      headline: "",
+      testAllBlogs: [
+        {
+          _id: "623f048ce73cbd00165064d8",
+          tulisan:
+            'Setiap calon Ibu tentu ingin memiliki anak yang unggul. Berbagai macam cara ditempuh oleh orang tua agar tumbuh kembang anak menjadi optimal, salah satunya adalah dengan memaparkan musik klasik saat usia kehamilan.\n\n\nSuatu penelitian pada tahun 1993 menyatakan bahwa mendengarkan musik Mozart (khususnya Piano Sonata for Two Pianos: K448) berdampak positif terhadap performa saat mengerjakan suatu bagian tes IQ sehingga hasilnya lebih tinggi. [1] Hal ini kemudian diamini dan diinterpretasikan secara berlebihan oleh dunia komersil.\n\n\nPada pertengahan 1990-an, terjadi booming penjualan kaset kompilasi musik klasik dan laku keras karena kampanye marketing “Musik Mozart membuat anak cerdas”. Hal ini pun saat ini masih menjadi suatu komoditas, khususnya bagi para calon orang tua.\n\n\nPada artikel Editors’ Choice kali ini, Sycomora ingin mengupas tuntas mitos-fakta serta manfaat konkret dari paparan musik klasik untuk janin dan dampaknya terhadap tumbuh kembang anak di masa depan.\n\n\n====\n### **Sang Janin Mendengar Suara Kita**\n\n<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2hHeGD57S0BcopfVcmehdl?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>\n\nMerupakan suatu fakta bahwa saat dalam kandungan, seorang calon anak dapat mendengar suara dari luar rahim Ibu yang begitu nyaman baginya.\n\nPada usia kehamilan antara 24-35 minggu, janin mengalami perkembangan dan penyempurnaan sistem pendengaran, mulai dari frekuensi suara rendah, hingga semakin tinggi. [2,9]\n\nTentunya, suara yang didengar janin juga dapat diproses dengan baik, dan dapat berdampak pada perkembangan sistem saraf janin, termasuk otak. [9] Hal ini kemudian yang menjadi hipotesis bahwa dengan memberikan sensor yang tepat, perkembangan janin bisa dioptimalkan, bahkan berdampak pada jangka panjang hingga usia dewasa dan lanjut.\n====\n### **Tidak Menjadikan Anak Cerdas**\n\nSebuah meta-analisis terhadap 16 penelitian menemukan bahwa pemutaran musik klasik (tidak hanya Mozart) berdampak pada peningkatan kecerdasan anak dalam waktu singkat (temporer). Namun, tidak ditemukan adanya peningkatan kecerdasan permanen dalam jangka panjang. [4]\n\nMelalui penemuan ini, dapat disimpulkan bahwa kecerdasan anak bisa disentil (brain arousal) dengan paparan musik klasik sebelum belajar atau ujian. Namun, hal ini tidak berdampak signifikan untuk tingkat kecerdasan di masa depan mereka.\n\nBrain arousal juga bisa dilakukan menggunakan media lain; tidak hanya musik, efek yang sama juga dapat dirasakan dari olahraga dan secangkir kopi. [5]\n====\n### **Anak Menjadi Lebih Adaptif**\n\nPenelitian menunjukkan bahwa, paparan suara dapat berdampak terhadap neural plasticity bayi. [6] Neural plasticity adalah kemampuan otak untuk mengubah susunan sel neuron. Seiring bertambahnya usia, neural plasticity terus berkurang. Istilah ini sering disederhanakan sebagai “otak encer”, dan menjadi alasan mengapa usia dini sangat mudah beradaptasi dengan hal baru.\n\nPaparan musik klasik saat kehamilan dapat meningkatkan ketahanan neural plasticity pada bayi dan anak-anak. Efeknya terasa hingga 4 bulan pasca kelahiran. [7] Lalu, apakah ini berdampak pada kecerdasan anak? Tidak. Neural plasticity tidak menjamin kecerdasan anak secara keseluruhan.\n\nDisimpulkan pada penelitian ini bahwa suara apa pun (tidak hanya musik klasik) dapat memengaruhi neural plasticity janin. Suara berisik dan keras dapat memberikan efek berlawanan, dan dapat merusak perkembangan otak bayi jika terpapar dalam jangka waktu lama. [6,7]\n====\n### **Dampak Lain yang Tidak Disangka**\n\nBeragam penelitian yang membahas mengenai Mozart Effect ini justru menemukan efek lain yang tidak disangka juga bermanfaat tidak hanya untuk janin dan bayi, tetapi masyarakat secara luas. Berikut beberapa temuan yang dapat disimpulkan:\n\nIbu hamil menjadi lebih tenang\nPaparan musik klasik dapat mengurangi episode kecemasan pada masa kehamilan. [8]\n\nMusik klasik dapat meredakan episode epilepsi\nFluktuasi gelombang otak pada epilepsi dapat diredakan secara signifikan berdasarkan pengamatan menggunakan EEG (electroencephalography). [3]\n\nKondisi bayi pasca-kelahiran lebih stabil\nPemutaran musik klasik juga dapat berdampak pada bayi yang baru lahir agar menjadi lebih tenang, rileks, serta komplikasi pasca-kelahiran pada bayi lebih sedikit. [9]\n====\n### **Referensi**\n\n[1] Rauscher, F H et al. “Music and spatial task performance.” Nature vol. 365,6447 (1993): 611. doi:10.1038/365611a0\n\n[2] Hepper, P G, and B S Shahidullah. “Development of fetal hearing.” Archives of disease in childhood. Fetal and neonatal edition vol. 71,2 (1994): F81-7. doi:10.1136/fn.71.2.f81\n\n[3] Jenkins, J S. “The Mozart effect.” Journal of the Royal Society of Medicine vol. 94,4 (2001): 170-2. doi:10.1177/014107680109400404\n\n[4] Chabris, C. Prelude or requiem for the ‘Mozart effect’?. Nature 400, 826–827 (1999). doi:10.1038/23608\n\n[5] Schellenberg, E Glenn, and Susan Hallam. “Music listening and cognitive abilities in 10- and 11-year-olds: the blur effect.” Annals of the New York Academy of Sciences vol. 1060 (2005): 202-9. doi:10.1196/annals.1360.013\n\n[6] Arya, Ravindra et al. “Maternal Music Exposure during Pregnancy Influences Neonatal Behaviour: An Open-Label Randomized Controlled Trial.” International journal of pediatrics vol. 2012 (2012): 901812. doi:10.1155/2012/901812\n\n[7] Partanen, Eino et al. “Prenatal music exposure induces long-term neural effects.” PloS one vol. 8,10 e78946. (2013). doi:10.1371/journal.pone.0078946\n\n[8] Nwebube, Chineze et al. “Prenatal listening to songs composed for pregnancy and symptoms of anxiety and depression: a pilot study.” BMC complementary and alternative medicine vol. 17,1 256. (2017). doi:10.1186/s12906-017-1759-3\n\n[9] Chorna, O et al. “Neuroprocessing Mechanisms of Music during Fetal and Neonatal Development: A Role in Neuroplasticity and Neurodevelopment.” Neural plasticity vol. 2019 3972918. (2019). doi:10.1155/2019/3972918\n\n[10] Fisher, Martin. American Academy of Pediatrics Textbook of Adolescent Health Care. Elk Grove Village, Ill.: American Academy of Pediatrics. (2011). Print.\n',
+          published_at: "2022-03-26T12:18:26.885Z",
+          createdAt: "2022-03-26T12:18:20.342Z",
+          updatedAt: "2022-04-08T02:15:33.454Z",
+          __v: 0,
+          author: "Jason",
+          instagram: "instagram.com/sycomora.id",
+          minutes: 5,
+          title: "Putar Mozart: apa bisa bikin anak pintar?",
+          id: "623f048ce73cbd00165064d8",
+        },
+        {
+          _id: "624f9b6041ba470016ed8212",
+          title: "Auditory Beat Stimulation (ABS) untuk Manipulasi Diri",
+          author: "Jason",
+          minutes: 5,
+          tulisan:
+            "Auditory Beat Stimulation (ABS) merupakan suatu terapi yang populer dalam ilmu psikologi dan psikiatri klinis di mana metode ini dapat memanipulasi fokus dan mood seseorang secara bawah sadar. Di sini Sycomora akan membahas bagaimana ABS bekerja, apa prinsip dasar dan mekanisme gelombang suara yang digunakan, serta apa dampak dan manfaat yang bisa dipetik setelah terapi ABS.\n## \n\n\n### **ABS dan Gelombang Otak**\n\nABS secara teknis bekerja paling optimal pada frekuensi setara dengan gelombang otak. Perlu diketahui, ada lima jenis gelombang otak yang semuanya memiliki frekuensi yang berbeda: [1]\n\n**Gelombang Gamma (>30 Hz) “Super-sadar”**\n\nGelombang ini muncul ketika otak seseorang sedang beraktivitas dengan sangat luar biasa, seperti saat sedang mengingat kembali suatu kejadian atau pengalaman, berkonsentrasi, dan kondisi kesadaran seseorang sedang berada di puncaknya (hyper-awareness state).\n\n**Gelombang Beta (13-30 Hz) “Sadar”**\n\nGelombang ini muncul ketika seseorang sedang beraktivitas sehari-hari, di mana secara fisik tubuh seseorang sedang aktif. Kesadaran seseorang berada dalam posisi aware (persepsi terhadap sensor bekerja dengan baik).\n\n**Gelombang Alpha (8-13 Hz) “Santai”**\n\nGelombang ini muncul ketika aktivitas otak sedang terpusat pada satu hal non-fisik yang melibatkan fokus secara rileks. Pada gelombang ini, fungsi memori seseorang berada pada tingkatan maksimal sehingga pembelajaran menjadi efektif dan optimal.\n\n**Gelombang Theta (4-8 Hz)  “Setengah sadar / Bawah sadar”**\n\nGelombang ini muncul ketika seseorang berada pada kondisi rileks, saat meditasi, maupun saat tidur fase REM (rapid eye movement). Perbatasan antara sadar dan tidak sadar ini efektif dalam memicu kreativitas seseorang, serta merupakan frekuensi yang tepat untuk masuk ke dalam kondisi hipnosis.\n\n**Gelombang Delta (0,1-4 Hz) “Tidak Sadar”**\n\nGelombang ini muncul ketika seseorang sedang tertidur pulas. Mimpi terjadi pada saat ini, dan pada frekuensi ini, sensor tubuh dinonaktifkan, dan tubuh dapat melakukan reparasi dan rejuvenasi, seperti penyembuhan luka, peristirahatan organ, bahkan sampai ke pergantian sel kulit mati.\n\n\n===\n###**ABS dan Budaya Manusia**\n\n## Pada budaya manusia, tabuhan gendang pada upacara-upacara kebudayaan dan keagamaan untuk berkomunikasi dengan alam semesta, ternyata, berdasarkan pengukuran gelombang suara, ditemukan bahwa median dari frekuensi yang dibunyikan adalah 5Hz, di mana gelombang tabuhan gendang tersebut dapat menstimulasi aktivasi gelombang theta pada otak manusia. \n\nGelombang theta ini adalah gelombang otak yang aktif pada saat meditasi, dan dianggap oleh spiritualis sebagai kunci untuk masuk ke dalam alam semesta yang lebih luas lagi. [8]\n\nGelombang ini pun dipelajari lebih lanjut dalam penelitian, dan diteliti apakah dapat dimanfaatkan sebagai metode terapi untuk kesehatan fisik dan mental seseorang.\n\n",
+          published_at: "2022-04-08T02:18:15.668Z",
+          createdAt: "2022-04-08T02:18:08.345Z",
+          updatedAt: "2022-04-08T02:28:43.901Z",
+          __v: 0,
+          id: "624f9b6041ba470016ed8212",
+        },
+      ],
+    };
   },
-  methods: {
-    
-  },
+  methods: {},
   async created() {
     // this.headline = await api.getBlogById("623f056ce73cbd00165064d8")
     // this.headline = this.headline.data
-    this.headline = {"_id":"623f048ce73cbd00165064d8","tulisan":"---\n__Advertisement :)__\n\n- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image\n  resize in browser.\n- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly\n  i18n with plurals support and easy syntax.\n\nYou will like those projects!\n\n---\n\n# h1 Heading 8-)\n## h2 Heading\n### h3 Heading\n#### h4 Heading\n##### h5 Heading\n###### h6 Heading\n","published_at":"2022-03-26T12:18:26.885Z","createdAt":"2022-03-26T12:18:20.342Z","updatedAt":"2022-03-29T15:11:45.029Z","__v":0,"author":"Jason","instagram":"instagram.com","minutes":5,"title":"Putar Mozart: apa bisa bikin anak pintar?","id":"623f048ce73cbd00165064d8"}
+    this.headline = {
+      _id: "623f048ce73cbd00165064d8",
+      tulisan:
+        "---\n__Advertisement :)__\n\n- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image\n  resize in browser.\n- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly\n  i18n with plurals support and easy syntax.\n\nYou will like those projects!\n\n---\n\n# h1 Heading 8-)\n## h2 Heading\n### h3 Heading\n#### h4 Heading\n##### h5 Heading\n###### h6 Heading\n",
+      published_at: "2022-03-26T12:18:26.885Z",
+      createdAt: "2022-03-26T12:18:20.342Z",
+      updatedAt: "2022-03-29T15:11:45.029Z",
+      __v: 0,
+      author: "Jason",
+      instagram: "instagram.com",
+      minutes: 5,
+      title: "Putar Mozart: apa bisa bikin anak pintar?",
+      id: "623f048ce73cbd00165064d8",
+    };
   },
 };
 </script>
