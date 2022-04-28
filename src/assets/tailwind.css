@@ -4,6 +4,7 @@
 
 @tailwind utilities;
 
+
 @font-face {
     font-family: './fonts/Circular Std';
     src: url('./fonts/CircularStd-MediumItalic.eot');

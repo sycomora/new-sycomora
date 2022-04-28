@@ -5,8 +5,8 @@
             <p class="text-md lg:text-xl font-regular lg:font-semibold">Dapatkan manfaat lebih dan kamu juga berkesempatan untuk bergabung dalam komunitas besar kami.</p>
             <div class="w-max h-min flex justify-center items-center px-3 py-2 bg-white text-tersiary rounded-xl">Daftar Sekarang</div>
         </div>
-        <div class="flex flex-col lg:flex-row gap-6 lg:gap-32 items-center justify-center py-4">
-            <div class="grid grid-cols-2 lg:flex flex-col gap-x-5 lg:gap-x-0 text-left text-md lg:text-xl h-32 lg:h-64 justify-between">
+        <div class="flex flex-col lg:flex-row gap-6 lg:gap-32 items-center justify-center py-4 lg:py-12">
+            <div class="grid grid-cols-2 lg:flex flex-col gap-x-5 lg:gap-x-0 text-left text-md lg:text-xl h-32 lg:h-64 justify-between w-full">
                 <a class="h-0"><p class="hover:underline w-full" href="">Tentang Kami</p></a>
                 <a class="h-0"><p class="hover:underline w-full" href="">Hubungi Kami</p></a>
                 <a class="h-0"><p class="hover:underline w-full" href="">Komunitas</p></a>

@@ -1,6 +1,6 @@
 <template>
   <div class="w-screen h-full">
-    <div class="w-full grid grid-cols-11 gap-8 py-12 px-16 xxl:px-32">
+    <div class="w-full flex flex-col lg:grid lg:grid-cols-11 gap-8 py-6 lg:py-12 px-5 lg:px-16 xxl:px-32">
       <div class="blogs w-full h-full col-span-7 flex flex-col gap-5">
         <div class="w-full h-min flex flex-col">
           <img
@@ -11,25 +11,27 @@
           <div
             class="
               bg-white
-              p-10
+              p-5
+              lg:p-10
               text-left
               flex flex-col
-              gap-3
+              gap-1
+              lg:gap-3
               text-lg
               rounded-b-2xl
             "
           >
-            <div class="w-full flex justify-between font-bold text-lg">
+            <div class="w-full flex justify-between font-bold text-sm lg:text-lg">
               <p class="text-secondary">Editor's Choice</p>
               <p class="opacity-70">{{this.blogInfo.minutes}} menit baca</p>
             </div>
-            <p class="font-black text-5xl">
+            <p class="font-black text-3xl lg:text-5xl">
               {{ this.blogInfo.title }}
             </p>
-            <p class="opacity-70">
+            <p class="opacity-70 text-sm lg:text-lg">
               Ditulis oleh: {{ this.blogInfo.author }}
             </p>
-            <div v-html="first">
+            <div v-html="first" class="text-sm lg:text-lg">
             </div>
           </div>
         </div>
@@ -37,11 +39,13 @@
           <div
             class="
               bg-white
-              p-10
+              p-5
+              lg:p-10
               text-left
               flex flex-col
               gap-3
-              text-lg
+              text-sm
+              lg:text-lg
               rounded-2xl
             "
           >
@@ -50,7 +54,7 @@
           </div>
         </div>
       </div>
-      <div class="w-full col-span-4 h-full flex flex-col gap-5">
+      <div class="w-full lg:col-span-4 h-full flex flex-col gap-5">
         <div
           class="
             w-full
@@ -129,7 +133,8 @@ export default {
 <style scope>
 
 .blogs h3{
-  font-size: 32px;
+  font-size: 24px;
+  line-height: 1;
 }
 
 .blogs p{
