@@ -17,7 +17,7 @@ const routes = [
     component: Blogs
   },
   {
-    path: '/blog/:name',
+    path: '/blog/:slug',
     name: 'SingleBlog',
     component: SingleBlog
   },
@@ -29,6 +29,10 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
+  scrollBehavior() {
+    // always scroll to top
+    return { top: 0 }
+  },
   routes
 })
 

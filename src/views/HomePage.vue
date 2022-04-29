@@ -79,7 +79,7 @@
             <router-link
               :to="{
                 name: 'SingleBlog',
-                params: { id: headline.id, name: headline.title },
+                params: { slug:headline.slug },
               }"
             >
               <div
@@ -164,7 +164,7 @@
             <router-link
               :to="{
                 name: 'SingleBlog',
-                params: { id: headline.id, name: headline.title },
+                params: { slug:headline.slug },
               }"
             >
               <div
@@ -788,8 +788,10 @@
           :key="index"
           class="bg-white lg:bg-transparent rounded-xl  w-full h-40 lg:h-full lg:w-2/5 flex lg:flex-col gap-2 lg:gap-0 lg:px-4 items-center justify-center p-3 lg:p-0 lg:py-0"
         >
-          <div class="h-full w-40 lg:w-full lg:h-56 rounded-xl bg-primary opacity-25"></div>
-          <p class="w-full text-xl lg:text-4xl text-left lg:text-center">{{ blog.title }}</p>
+          <router-link :to="{name: 'SingleBlog', params: { slug:blog.slug },}">
+            <div class="h-full w-40 lg:w-full lg:h-56 rounded-xl bg-primary opacity-25"></div>
+            <p class="w-full text-xl lg:text-4xl text-left lg:text-center">{{ blog.title }}</p>
+          </router-link>
         </div>
       </div>
     </div>
@@ -818,6 +820,8 @@ export default {
           minutes: 5,
           title: "Putar Mozart: apa bisa bikin anak pintar?",
           id: "623f048ce73cbd00165064d8",
+          slug: "putar-mozart-apa-bisa-bikin-anak-pintar"
+
         },
         {
           _id: "624f9b6041ba470016ed8212",
@@ -831,13 +835,16 @@ export default {
           updatedAt: "2022-04-08T02:28:43.901Z",
           __v: 0,
           id: "624f9b6041ba470016ed8212",
+          slug: "auditory-beat-stimulation-abs-untuk-manipulasi-diri"
+
         },
       ],
     };
   },
   methods: {},
   async created() {
-    // this.headline = await api.getBlogById("623f056ce73cbd00165064d8")
+    // this.headline = await api.getBlogBySlug("putar-mozart-apa-bisa-bikin-anak-pintar")
+    // console.log(this.headline)
     // this.headline = this.headline.data
     this.headline = {
       _id: "623f048ce73cbd00165064d8",
@@ -852,6 +859,7 @@ export default {
       minutes: 5,
       title: "Putar Mozart: apa bisa bikin anak pintar?",
       id: "623f048ce73cbd00165064d8",
+      slug: "putar-mozart-apa-bisa-bikin-anak-pintar"
     };
   },
 };

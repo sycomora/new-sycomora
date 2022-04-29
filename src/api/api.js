@@ -6,8 +6,8 @@ export default{
         var response = await axios.get(`${STRAPI_URL}/blogs`).catch((err) => console.log(err))
         return response
     },
-    async getBlogById(id) {
-        var response = await axios.get(`${STRAPI_URL}/blogs/${id}`)
+    async getBlogBySlug(slug) {
+        var response = await axios.get(`${STRAPI_URL}/blogs/${slug}`)
         return response
-    }
+    },
 }
