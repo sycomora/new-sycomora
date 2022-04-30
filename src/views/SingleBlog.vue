@@ -73,7 +73,7 @@
         >
           <p class="text-3xl font-bold">Bacaan Untukmu:</p>
           <div v-for="blog, index in filteredAllBlogs" :key="index">
-            <a v-on:click="$router.go({name: 'SingleBlog', params: { slug:blog.slug }})">
+            <a :href="$router.resolve({name: 'SingleBlog', params: { slug:blog.slug }}).href">
             <p class="text-xl font-black">
               {{ blog.title }}
             </p>
