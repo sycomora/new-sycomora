@@ -1,5 +1,5 @@
 import axios from 'axios'
-const STRAPI_URL = "http://172.104.160.69:1337"
+const STRAPI_URL = "https://api.sycomora.id"
 
 export default{
     async getAllBlogs() {

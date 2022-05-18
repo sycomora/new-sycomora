@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col text-left w-full lg:w-96 text-sm">
-                    <img src="../assets/BannerWhite.svg" class="w-40" alt="Sycomora TM">
+                    <img src="../assets/Label.png" class="w-40" alt="Sycomora TM">
                     <p class="font-light">© 2020-2022 Sycomora Welfare Center. Hak cipta dilindungi undang-undang. Semua layanan website, konten, dan produk adalah untuk informasi semata. Sycomora tidak menyediakan layanan konsultasi, diagnosis, dan pengobatan apa pun.</p>
                     <a href="" class="hover:underline ">Baca lebih lanjut</a>
                 </div>
