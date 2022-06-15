@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-24 bg-primary flex items-center justify-between px-12">
     <div class="banner flex gap-5">
-      <img src="@/assets/Label.png" alt="Banner Sycomora" class="">\
+      <img src="@/assets/Banner.svg" alt="Banner Sycomora" class="">\
     </div>
     <a href="https://www.instagram.com/sycomora.id/" class="h-12 w-12 bg-white rounded-full flex items-center justify-center transition duration-500 ease-in-out transform hover:scale-110 cursor-pointer">
       <img src="@/assets/instagram.svg" class="w-8 h-8" alt="Instagram Sycomora">
