@@ -485,6 +485,7 @@
               {{blog.title}}
             </p>
             <p class="text-xs lg:text-lg">
+              {{blog.subtitle}}
               Subjudul ditulis di sini maksimal 2 baris seperti ini contohnya.
             </p>
             <p class="opacity-70 hidden lg:block">{{blog.minutes}}</p>
