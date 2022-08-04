@@ -1,4 +1,8 @@
-# new-sycomora
+![alt text](https://github.com/sycomora/new-sycomora/blob/main/Sycomora%20Front%20Desk.png)
+
+# Sycomora Front Desk
+Powered by VueJS ```https://github.com/vuejs/```
+
 
 ## Project setup
 ```
