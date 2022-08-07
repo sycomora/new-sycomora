@@ -446,8 +446,9 @@
           content-center
           justify-items-center
         "
-      >
-        <div
+      > 
+        <router-link
+          :to="{name: 'SingleBlog', params: { slug:blog.slug }}"
           v-for="(blog, index) in allBlogs.slice(0, 4)"
           :key="index"
           class="
@@ -464,7 +465,7 @@
             lg:p-5
           "
         >
-          <div class="rounded-xl w-full h-full object-center">
+          <div class="rounded-xl w-full h-full object-center ">
             <img
               src="@/assets/Main.png"
               alt=""
@@ -484,13 +485,14 @@
             <p class="text-sm lg:text-2xl font-bold">
               {{blog.title}}
             </p>
-            <p class="text-xs lg:text-lg">
+            <p class="text-xs lg:text-lg line-clamp-2 ">
               {{blog.subtitle}}
-              Subjudul ditulis di sini maksimal 2 baris seperti ini contohnya.
+              <!-- Subjudul ditulis di sini maksimal 2 baris seperti ini contohnya. -->
             </p>
-            <p class="opacity-70 hidden lg:block">{{blog.minutes}}</p>
+            <p class="opacity-70 hidden lg:block">{{blog.minutes}} menit baca</p>
           </div>
-        </div>
+
+        </router-link>
       </div>
       <div class="lg:hidden mt-3 h-12 w-full flex items-center justify-center">
         <button
