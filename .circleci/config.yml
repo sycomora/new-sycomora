@@ -4,6 +4,8 @@ version: 2.1
 
 orbs:
   slack: circleci/slack@4.1
+SLACK_ACCESS_TOKEN: xoxb-3782440876483-3904844961253-KJ2NcCV600PLBHUn0qpXESAl
+SLACK_DEFAULT_CHANNEL: tech-house
 jobs:
   deploy:
     docker:
