@@ -3,51 +3,19 @@
 version: 2.1
 
 orbs:
-  slack: circleci/slack@4.1
-SLACK_ACCESS_TOKEN: xoxb-3782440876483-3904844961253-KJ2NcCV600PLBHUn0qpXESAl
-SLACK_DEFAULT_CHANNEL: tech-house
-jobs:
-  deploy:
+  slack: circleci/slack@4.4.4
+  jobs:
+  example-job:
     docker:
-      - image: 'cimg/base:stable'
+      # replace with your preferred image
+      - image: cimg/base:stable
     steps:
-      - run: echo "deploy the website"
       - slack/notify:
-          event: fail
-          mentions: '<@U03PQ7MTRAL>'
-          channels: $tech-house
-          template: basic_fail_1
-      - slack/notify:
-          event: pass
-          template: success_tagged_deploy_1
-  test:
-    docker:
-      - image: 'cimg/base:stable'
-    steps:
-      - run: echo "test the website"
-workflows:
-  test-and-deploy:
-    jobs:
-      - test
-      - slack/on-hold:
-          context: slack-secrets
-          filters:
-            tags:
-              only: /^v.*/
-          requires:
-            - test
-      - pause_workflow:
-          filters:
-            tags:
-              only: /^v.*/
-          requires:
-            - test
-            - slack/on-hold
-          type: approval
-      - deploy:
-          filters:
-            tags:
-              only: /^v.*/
-          requires:
-            - pause_workflow
+          channel: $tech-house 
+          mentions: '<U03PQ7MTRAL>'
+          branch_pattern: .+main 
 
+workflows:
+  example-workflow:
+    jobs:
+      - slack/on-hold
