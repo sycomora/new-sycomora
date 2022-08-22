@@ -616,7 +616,7 @@
         <img
           src="@/assets/Pahami.svg"
           alt="Pahami Cara Kerja Kami"
-          class="rounded rounded-t-xl lg:rounded-r-xl h-full w-full"
+          class="rounded rounded-t-xl lg:rounded-r-xl h-full w-screen"
         />
         
         <div class="absolute bottom-10"></div>
