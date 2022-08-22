@@ -1,9 +1,9 @@
 <template>
     <div class="w-full h-full lg:h-80 p-8 lg:p-12 bg-gradient-to-tl from-tersiary to-[#c3d8fb] flex flex-col lg:flex-row gap-6 lg:gap-0 items-center justify-around text-white">
         <div class="flex flex-col w-full lg:w-96 text-left gap-2 ">
-            <p class="text-2xl lg:text-4xl font-bold">Buat akun Sycomora sekarang juga!</p>
-            <p class="text-md lg:text-xl font-regular lg:font-semibold">Dapatkan manfaat lebih dan kamu juga berkesempatan untuk bergabung dalam komunitas besar kami.</p>
-            <div class="w-max h-min flex justify-center items-center px-3 py-2 bg-white text-tersiary rounded-xl">Daftar Sekarang</div>
+            <p class="text-2xl lg:text-4xl font-bold">Dengarkan Vitae Sekarang Juga!</p>
+            <p class="text-md lg:text-xl font-regular lg:font-semibold">Dari narasumber yang berpengalaman dalam bidangnya, kami berkomitment untuk menyajikan apa yang kamu mau!</p>
+            <div href="https://open.spotify.com/show/6jKhfpX7kPnSF1iwe4NrTu?si=9acf0a3efedb40b7" class="w-max h-min flex justify-center items-center px-3 py-2 bg-white text-tersiary rounded-xl">Dengrkan Sekarang!</div>
         </div>
         <div class="flex flex-col lg:flex-row gap-6 lg:gap-32 items-center justify-center py-4 lg:py-12">
             <div class="grid grid-cols-2 lg:flex flex-col gap-x-5 lg:gap-x-0 text-left text-md lg:text-xl h-32 lg:h-64 justify-between w-full">
