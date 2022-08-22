@@ -2,7 +2,7 @@
     <div class="w-full h-full lg:h-80 p-8 lg:p-12 bg-gradient-to-tl from-tersiary to-[#c3d8fb] flex flex-col lg:flex-row gap-6 lg:gap-0 items-center justify-around text-white">
         <div class="flex flex-col w-full lg:w-96 text-left gap-2 ">
             <p class="text-2xl lg:text-4xl font-bold">Dengarkan Vitae Sekarang Juga!</p>
-            <p class="text-md lg:text-xl font-regular lg:font-semibold">Dari narasumber yang berpengalaman dalam bidangnya, kami berkomitment untuk menyajikan apa yang kamu mau!</p>
+            <p class="text-md lg:text-xl font-regular lg:font-semibold">Langsung dari narasumber yang berpengalaman dalam bidangnya!</p>
             <div href="https://open.spotify.com/show/6jKhfpX7kPnSF1iwe4NrTu?si=9acf0a3efedb40b7" class="w-max h-min flex justify-center items-center px-3 py-2 bg-white text-tersiary rounded-xl">Dengrkan Sekarang!</div>
         </div>
         <div class="flex flex-col lg:flex-row gap-6 lg:gap-32 items-center justify-center py-4 lg:py-12">

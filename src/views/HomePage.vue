@@ -249,7 +249,7 @@
         class="
           w-max
           lg:h-min lg:absolute
-          top-0
+          top-1
           left-16
           rounded-b-xl
           lg:ml-5
@@ -427,7 +427,7 @@
         Lihat semua topik >
       </button>
     </div>
-    <!-- Third Section -->
+    <!-- Third Section --> <!--Artikel-->
     <div class="h-full w-screen my-6 lg:my-14 px-5 lg:px-24 xl:px-32">
       <div class="flex justify-between items-end w-full">
         <p class="text-2xl lg:text-4xl font-bold">Artikel Terbaru Kami:</p>
@@ -514,7 +514,7 @@
         </button>
       </div>
     </div>
-    <!-- Fourth Section -->
+    <!-- Fourth Section --> <!--Vitae-->
     <div class="h-full w-screen my-6 lg:my-14 px-5 lg:px-24 xl:px-32">
       <div class="lg:grid lg:grid-cols-2 flex flex-col">
         <img
@@ -558,147 +558,7 @@
         </div>
       </div>
     </div>
-    <!-- Fifth Section -->
-    <div class="h-full w-screen lg:-mt-8 my-6 lg:my-0 px-5 lg:px-24 xl:px-32">
-      <div class="flex justify-between items-end w-full">
-        <p class="text-2xl lg:text-4xl font-bold text-left lg:text-center">Topik Bahasan per Penyakit:</p>
-        <a href="" class="hidden lg:block text-lg text-tersiary hover:underline"
-          >Lihat semua ></a
-        >
-      </div>
-      <div
-        class="
-          w-full
-          grid grid-cols-3
-          lg:flex
-          lg:px-5
-          justify-between
-          gap-0
-          text-primary
-          font-bold
-          text-sm
-          lg:text-2xl
-          my-5
-        "
-      >
-        <div class="flex flex-col items-center justify-start lg:justify-center">
-          <img
-            src="@\assets\Penyakit1.png"
-            alt="Penyakit Kronis"
-            class="w-28 lg:w-56 h-28 lg:h-56"
-          />
-          <p>Diabetes Tipe 2</p>
-        </div>
-        <div class="flex flex-col items-center justify-start lg:justify-center">
-          <img
-            src="@\assets\Penyakit2.png"
-            alt="Penyakit Kronis"
-            class="w-28 lg:w-56 h-28 lg:h-56"
-          />
-          <p>Penyakit Autoimun</p>
-        </div>
-        <div class="flex flex-col items-center justify-start lg:justify-center">
-          <img
-            src="@\assets\Penyakit3.png"
-            alt="Penyakit Kronis"
-            class="w-28 lg:w-56 h-28 lg:h-56"
-          />
-          <p>Kanker Payudara</p>
-        </div>
-        <div class="flex flex-col items-center justify-start lg:justify-center">
-          <img
-            src="@\assets\Penyakit4.png"
-            alt="Penyakit Kronis"
-            class="w-28 lg:w-56 h-28 lg:h-56"
-          />
-          <p>Gangguan Kecemasan</p>
-        </div>
-        <div class="flex flex-col items-center justify-start lg:justify-center">
-          <img
-            src="@\assets\Penyakit5.png"
-            alt="Penyakit Kronis"
-            class="w-28 lg:w-56 h-28 lg:h-56"
-          />
-          <p>Hipertensi</p>
-        </div>
-        <div class="flex lg:hidden flex-col items-center justify-start lg:justify-center">
-          <div class="text-white font-light rounded-xl bg-tersiary w-28 lg:w-56 h-28 lg:h-56 flex items-center justify-center">
-              Lihat semua
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Sixth Section -->
-    <div class="h-full w-screen mt-12 my-6 lg:my-0 px-5 lg:px-24 xl:px-32">
-      <div class="flex justify-between items-end w-full">
-        <p class="text-2xl lg:text-4xl font-bold">Produk Ulasan Kami:</p>
-        <a href="" class="hidden lg:block text-lg text-tersiary hover:underline"
-          >Lihat semua ></a
-        >
-      </div>
-      <div
-        class="
-          w-full
-          grid grid-cols-3
-          lg:flex
-          justify-between
-          lg:px-5
-          gap-0
-          text-primary
-          font-bold
-          text-sm
-          lg:text-2xl
-          my-5
-        "
-      >
-        <div class="flex flex-col items-center justify-center">
-          <img
-            src="@\assets\Ulasan1.png"
-            alt="Penyakit Kronis"
-            class="w-28 lg:w-56 h-28 lg:h-56"
-          />
-          <p>Penyakit Kronis</p>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-          <img
-            src="@\assets\Ulasan1.png"
-            alt="Penyakit Kronis"
-            class="w-28 lg:w-56 h-28 lg:h-56"
-          />
-          <p>Penyakit Kronis</p>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-          <img
-            src="@\assets\Ulasan1.png"
-            alt="Penyakit Kronis"
-            class="w-28 lg:w-56 h-28 lg:h-56"
-          />
-          <p>Penyakit Kronis</p>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-          <img
-            src="@\assets\Ulasan1.png"
-            alt="Penyakit Kronis"
-            class="w-28 lg:w-56 h-28 lg:h-56"
-          />
-          <p>Penyakit Kronis</p>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-          <img
-            src="@\assets\Ulasan1.png"
-            alt="Penyakit Kronis"
-            class="w-28 lg:w-56 h-28 lg:h-56"
-          />
-          <p>Penyakit Kronis</p>
-        </div>
-        <div class="flex lg:hidden flex-col items-center justify-start lg:justify-center">
-          <div class="text-white font-light rounded-xl bg-tersiary w-28 lg:w-56 h-28 lg:h-56 flex items-center justify-center">
-              Lihat semua
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Seventh Section -->
+    <!-- Fifth Section, Ending-->
     <div class="h-full w-screen my-6 lg:my-16 px-5 lg:px-24 xl:px-32">
       <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 relative w-full">
         <div
@@ -756,45 +616,10 @@
         <img
           src="@/assets/Pahami.svg"
           alt="Pahami Cara Kerja Kami"
-          class="rounded rounded-t-xl lg:rounded-r-xl w-full"
+          class="rounded rounded-t-xl lg:rounded-r-xl h-full w-full"
         />
         
         <div class="absolute bottom-10"></div>
-      </div>
-    </div>
-    <!-- Last Section -->
-    <div class="h-full w-screen lg:-mt-8 mb-14 px-5 lg:px-24 xl:px-32">
-      <div class="flex justify-between items-end w-full">
-        <p class="text-2xl lg:text-4xl font-bold">Artikel Sponsor Kami:</p>
-        <a href="" class="hidden lg:block text-lg text-tersiary hover:underline"
-          >Lihat semua ></a
-        >
-      </div>
-      <div
-        class="
-          w-full
-          flex
-          flex-col
-          lg:flex-row
-          justify-around
-          gap-4
-          lg:gap-2
-          text-primary
-          font-bold
-          text-2xl text-left
-          my-5
-        "
-      >
-        <div
-          v-for="(blog, index) in allBlogs.slice(0, 3)"
-          :key="index"
-          class="bg-white lg:bg-transparent rounded-xl  w-full h-40 lg:h-full lg:w-2/5 flex lg:flex-col gap-2 lg:gap-0 lg:px-4 items-center justify-center p-3 lg:p-0 lg:py-0"
-        >
-          <router-link :to="{name: 'SingleBlog', params: { slug:blog.slug },}">
-            <div class="h-full w-40 lg:w-full lg:h-56 rounded-xl bg-primary opacity-25"></div>
-            <p class="w-full text-xl lg:text-4xl text-left lg:text-center">{{ blog.title }}</p>
-          </router-link>
-        </div>
       </div>
     </div>
   </div>
