@@ -256,7 +256,7 @@
           p-5
           lg:pt-10
           text-white text-lg
-          lg:text-4xl
+          lg:text-3xl
           bg-primary
           font-bold
         "
@@ -317,8 +317,8 @@
           </div>
         </div>
 
-        <button
-          class="
+        <button>
+         <a href="/topik" class="
             bg-white
             hidden
             lg:block
@@ -331,7 +331,7 @@
             text-xl
           "
         >
-          Lihat semua topik >
+          Lihat semua topik ></a>
         </button>
       </div>
       <div
@@ -431,9 +431,9 @@
     <div class="h-full w-screen my-6 lg:my-14 px-5 lg:px-24 xl:px-32">
       <div class="flex justify-between items-end w-full">
         <p class="text-2xl lg:text-4xl font-bold">Artikel Terbaru Kami:</p>
-        <a href="" class="text-lg text-tersiary hover:underline hidden lg:block"
+        <button><a href="/topik" class="text-lg text-tersiary hover:underline hidden lg:block"
           >Lihat semua ></a
-        >
+        ></button>
       </div>
       <div
         class="
@@ -495,26 +495,14 @@
         </router-link>
       </div>
       <div class="lg:hidden mt-3 h-12 w-full flex items-center justify-center">
-        <button
-          class="
-            bg-tersiary
-            block
-            lg:hidden
-            h-full
-            w-full
-            p-2
-            px-4
-            rounded-xl
-            font-bold
-            text-lg
-            text-white
-          "
-        >
-          Lihat semua topik >
+        <button> 
+          <a href="/artikel" class= "bg-tersiary block lg:hidden h-full w-full
+            p-2 px-4 rounded-xl font-bold text-lg text-white">
+          Lihat semua topik ></a>
         </button>
       </div>
     </div>
-    <!-- Fourth Section --> <!--Vitae-->
+    <!-- Fourth Section Vitae-->
     <div class="h-full w-screen my-6 lg:my-14 px-5 lg:px-24 xl:px-32">
       <div class="lg:grid lg:grid-cols-2 flex flex-col">
         <img
@@ -536,7 +524,7 @@
             font-semibold
             text-left
             bg-white
-            rounded-b-xl
+            rounded-r-xl
             lg:rounded-r-xl
           "
         >
@@ -597,7 +585,7 @@
           </p>
           <!--WHERE THE HELL IS THIS BUTTON GO?-->
           <b-button>
-         <a class="bg-tersiary text-white block lg:hidden h-full w-full p-2 px-4-rounded-xl font-bold text-lg"
+         <a class="bg-tersiary text-white block lg:hidden h-full w-full p-2 px-4-r-rounded-xl font-bold text-lg"
           href="https://instagram.com/mzmznasipadang">Lihat Semua</a></b-button>
         </div>
         <img
