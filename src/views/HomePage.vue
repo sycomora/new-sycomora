@@ -595,9 +595,10 @@
             Produk-produk yang Sycomora ulas selalu berdasarkan objektivitas dan
             atas dasar memberikan manfaat bagi masyarakat luas.
           </p>
-          <b-button 
-          class="bg-tersiary block lg:hidden h-full w-full p-2 px-4-rounded-xl font-bold text-lg"
-          href="https://instagram.com/mzmznasipadang">Lihat Semua</b-button>
+          <!--WHERE THE HELL IS THIS BUTTON GO?-->
+          <b-button>
+         <a class="bg-tersiary text-white block lg:hidden h-full w-full p-2 px-4-rounded-xl font-bold text-lg"
+          href="https://instagram.com/mzmznasipadang">Lihat Semua</a></b-button>
         </div>
         <img
           src="@/assets/Pahami.svg"
