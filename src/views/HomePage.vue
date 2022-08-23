@@ -1,6 +1,6 @@
 <template>
   <div class="home w-screen h-full">
-    <!-- First Section -->
+    <!-- First Section Editor's Choice-->
     <div
       class="
         h-full
@@ -232,7 +232,7 @@
         </p>
       </div>
     </div>
-    <!-- Second Section -->
+    <!-- Second Section Second Highlight-->
     <div
       class="
         h-full
@@ -579,7 +579,7 @@
             lg:rounded-l-xl
           "
         >
-          <p class="text-2xl lg:text-5xl font-bold lg:font-black">
+          <p class="text-3xl lg:text-4xl font-bold lg:font-black">
             Menyajikan informasi kesehatan yang akurat dan sederhana.
           </p>
           <p class="text-primary text-sm lg:text-xl font-normal">
@@ -591,27 +591,13 @@
             Setiap unggahan telah melalui proses review yang ketat dan selalu
             diperbarui setiap saat.
           </p>
-          <p class="text-primary text-sm lg:text-xl font-normal">
+            <p class="text-primary text-sm lg:text-xl font-normal">
             Produk-produk yang Sycomora ulas selalu berdasarkan objektivitas dan
             atas dasar memberikan manfaat bagi masyarakat luas.
           </p>
-          <button
-          class="
-            bg-tersiary
-            block
-            lg:hidden
-            h-full
-            w-full
-            p-2
-            px-4
-            rounded-xl
-            font-bold
-            text-lg
-            text-white
-          "
-        >
-          Lihat semua
-        </button>
+          <b-button 
+          class="bg-tersiary block lg:hidden h-full w-full p-2 px-4-rounded-xl font-bold text-lg"
+          href="https://instagram.com/mzmznasipadang">Lihat Semua</b-button>
         </div>
         <img
           src="@/assets/Pahami.svg"
