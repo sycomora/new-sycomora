@@ -3,8 +3,10 @@
         <div class="flex flex-col w-full lg:w-96 text-left gap-2 ">
             <p class="text-2xl lg:text-4xl font-bold">Dengarkan Vitae Sekarang Juga!</p>
             <p class="text-md lg:text-xl font-regular lg:font-semibold">Langsung dari narasumber yang berpengalaman dalam bidangnya!</p>
-            <div>
-            <b-button href="https://open.spotify.com/show/6jKhfpX7kPnSF1iwe4NrTu?si=9acf0a3efedb40b7" class="w-max h-min flex justify-center items-center px-3 py-2 bg-white text-tersiary rounded-xl">Dengarkan Sekarang!</b-button></div>
+            <div> <!--BUTTON PALING NGESELIN DEH KZL KZL KZL KZLLLLLLL-->
+            <button class="w-max h-min flex justify-center items-center px-3 py-2 bg-white text-tersiary rounded-xl"
+              href="https://instagram.com/mzmznasipadang"  
+              @click="onclick">{{ btnText }}Dengarkan Sekarang!</button></div>
         </div>
         <div class="flex flex-col lg:flex-row gap-6 lg:gap-32 items-center justify-center py-4 lg:py-12">
             <div class="grid grid-cols-2 lg:flex flex-col gap-x-5 lg:gap-x-0 text-left text-md lg:text-xl h-32 lg:h-64 justify-between w-full">

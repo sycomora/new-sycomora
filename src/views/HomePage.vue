@@ -579,7 +579,7 @@
             lg:rounded-l-xl
           "
         >
-          <p class="text-3xl lg:text-4xl font-bold lg:font-black">
+          <p class="text-3xl lg:text-3xl font-bold lg:font-black">
             Menyajikan informasi kesehatan yang akurat dan sederhana.
           </p>
           <p class="text-primary text-sm lg:text-xl font-normal">
