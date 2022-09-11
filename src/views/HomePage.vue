@@ -461,6 +461,10 @@
             lg:grid lg:grid-cols-3
             gap-3
             content-center
+            duration-500
+            ease-in-out
+            transform
+            hover:scale-[103%]
             p-3
             lg:p-5
           "
@@ -614,8 +618,8 @@ export default {
   methods: {},
   async created() {
     this.allBlogs = await api.getAllBlogs()
-    this.allBlogs = this.allBlogs.data
-    console.log(this.allBlogs)
+      .then(res => res.data)
+      .catch(err => console.log(err))
     this.headline = this.allBlogs[0]
   },
 };
